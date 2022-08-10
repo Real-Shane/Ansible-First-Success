@@ -1,0 +1,10 @@
+---
+- hosts: ubuntu
+  become: true
+
+  tasks:
+  - name: Installing htop
+
+    apt:
+      name: htop
+      state: latest
